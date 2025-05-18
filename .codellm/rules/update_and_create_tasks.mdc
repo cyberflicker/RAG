@@ -1,0 +1,59 @@
+---
+description: Update and create tasks
+globs: **/TASK.md
+alwaysApply: false
+---
+
+---
+description: Update and create tasks in TASK.md
+globs: ["**/TASK.md"]
+alwaysApply: false
+---
+
+# Task Management Rules
+
+When managing tasks in TASK.md, follow these guidelines:
+
+1. Task Format
+- Use "- [ ]" for incomplete tasks
+- Use "- [x]" for completed tasks
+- Include timestamp when marking tasks complete: "- [x] (YYYY-MM-DD)"
+
+2. Task Organization
+- Maintain tasks under appropriate sections:
+  * Active Tasks
+  * Completed Tasks
+  * Backlog
+  * Milestones
+
+3. Task Updates
+- When marking a task complete:
+  * Move it to "Completed Tasks" section
+  * Add completion timestamp
+  * Preserve task description and context
+  * Update any related sub-tasks
+
+4. New Tasks
+- When adding new tasks:
+  * Place under appropriate section
+  * Include clear, actionable description
+  * Add any relevant sub-tasks indented below
+  * Link to related issues/PRs if applicable
+
+5. Task Discovery
+- When discovering new tasks during conversations:
+  * Add them to appropriate section
+  * Include context of discovery
+  * Link to related tasks if applicable
+
+Example:
+```md
+# Active Tasks
+- [ ] Implement user authentication
+  - [ ] Design login flow
+  - [ ] Set up database schema
+
+# Completed Tasks  
+- [x] (2024-05-17) Set up project structure
+  - [x] Create core directories
+  - [x] Initialize git repository
