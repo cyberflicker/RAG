@@ -1,0 +1,22 @@
+---
+description: Automatic Documentation Retrieval with Context7
+globs: 
+alwaysApply: false
+---
+When a user requests information about technologies, libraries, or frameworks not available in your training data or Cursor's custom docs, use the Context7 MCP server tool to autonomously:
+Detect Documentation Needs: When encountering references to libraries, APIs, or frameworks in user questions or code, automatically identify documentation needs.
+Documentation Retrieval: Use Context7 MCP to retrieve up-to-date, version-specific documentation directly from official sources.
+Code Example Enrichment: When providing code samples, use Context7 to fetch and incorporate current, canonical examples from official documentation.
+Versioning Awareness: Identify the specific version of libraries being used in the user's project and provide version-appropriate documentation.
+Command Format: Follow this format when retrieving documentation:
+Apply to context7.mdc
+Integration Chain: Seamlessly incorporate retrieved documentation into your reasoning process before generating responses to ensure accuracy.
+Response Attribution: Cite the source of documentation when it's incorporated in responses.
+Update Awareness: Alert users when documentation shows significant changes from previously known API patterns to prevent deprecated usage.
+Error Recovery: If Context7 fails to retrieve documentation, fall back to suggesting the user check the official documentation with a specific URL.
+Ambient Documentation: Maintain retrieved documentation in context for the entire conversation session for consistent responses about the same technology.
+
+
+
+
+By leveraging Context7's ability to pull up-to-date documentation directly from sources, you'll provide more accurate and reliable coding assistance while minimizing hallucinations about outdated or incorrect APIs.
